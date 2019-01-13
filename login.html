@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Вход в личный кабинет</title>
+  </head>
+  <body>
+    <h1>Вход в личный кабинет</h1>
+    <form class="user" method="post"
+          action="https://echo.htmlacademy.ru">
+      <p>
+        <label for="user-login">Логин</label>
+        <input id="user-login" type="text"
+               name="login" placeholder="Логин">
+      </p>
+      <p>
+        <label for="user-password">Пароль</label>
+        <input id="user-password" type="password"
+               name="password" placeholder="Пароль">
+      </p>
+      <p>
+        <label>
+          <input type="checkbox" name="remember">
+          Запомните меня
+        </label>
+      </p>
+      <label class="visually hidden" for="sign-in">
+        Войти в личный кабинет.
+        <button type="submit" id="sign-in">Войти</button>
+      </label>
+    </form>
+    <label class="visually hidden" for="close">
+      Закрыть окно входа в личный кабинет.
+      <button id="close" type="button">Закрыть</button>
+    </label>
+  </body>
+</html>
