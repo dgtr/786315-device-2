@@ -1378,8 +1378,8 @@ ul {
   background-color: #f0c52e;
 }
 
-
-.label-service-2:active::before {
+.label-service-2::before {
+  display: none;
   content: "";
   position: absolute;
   top: -8px;
@@ -1390,6 +1390,10 @@ ul {
   height: 40px;
 
   background-color: #000000;
+}
+
+#service-2:checked ~ .label-service-2::before {
+  display: block;
 }
 
 .label-service-2:active {
