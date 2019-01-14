@@ -1334,7 +1334,8 @@ ul {
 }
 
 
-.label-service-1:active::before {
+.label-service-1::after {
+  display: none;
   content: "";
   position: absolute;
   top: -8px;
@@ -1347,7 +1348,12 @@ ul {
   background-color: #000000;
 }
 
-.label-service-1:active {
+#service-1:checked ~ .container .slider-services-controls .label-service-1::after {
+  display: block;
+}
+
+
+#service-1:checked ~ .container .slider-services-controls .label-service-1 {
   color: #f0c52e;
 }
 
@@ -1378,7 +1384,7 @@ ul {
   background-color: #f0c52e;
 }
 
-.label-service-2::before {
+.label-service-2::after {
   display: none;
   content: "";
   position: absolute;
@@ -1392,11 +1398,12 @@ ul {
   background-color: #000000;
 }
 
-#service-2:checked ~ .label-service-2::before {
+#service-2:checked ~ .container .slider-services-controls .label-service-2::after {
   display: block;
 }
 
-.label-service-2:active {
+
+#service-2:checked ~ .container .slider-services-controls .label-service-2 {
   color: #f0c52e;
 }
 
@@ -1427,7 +1434,8 @@ ul {
   background-color: #f0c52e;
 }
 
-.label-service-3:active::before {
+.label-service-3::after {
+  display: none;
   content: "";
   position: absolute;
   top: -12px;
@@ -1440,7 +1448,12 @@ ul {
   background-color: #000000;
 }
 
-.label-service-3:active {
+#service-3:checked ~ .container .slider-services-controls .label-service-3::after {
+  display: block;
+}
+
+
+#service-3:checked ~ .container .slider-services-controls .label-service-3 {
   color: #f0c52e;
 }
 
