@@ -131,7 +131,7 @@ ul {
   flex-wrap: wrap;
   justify-content: flex-start;
   width: 100%;
-  margin-top: 26px;
+  margin-top: 25px;
 
   font-weight: 800;
   font-size: 18px;
@@ -142,10 +142,9 @@ ul {
   letter-spacing: 3.5px;
 }
 
-.main-header  img {
+.main-header img {
   position: relative;
-  bottom: 22px;
-
+  bottom: 23px;
   width: 163px;
   height: 35px;
   margin-bottom: -19px;
@@ -172,8 +171,6 @@ ul {
   line-height: 30px;
   font-family: "Open Sans", "Arial", sans-serif;
   color: #000000;
-  /* color: rgba(0, 0, 0, 0.3); */
-  /* letter-spacing: 0.5px; */
 }
 
 .search-text-input::placeholder {
@@ -192,6 +189,9 @@ ul {
   outline: none;
   width: 265px;
   vertical-align: super;
+  font-weight: 300;
+  line-height: 30px;
+  letter-spacing: 0.15px;
 }
 
 
@@ -210,6 +210,8 @@ ul {
   font-size: 47px;
   font-family: "gilroy", "Arial", sans-serif;
   color: #000000;
+  letter-spacing: 0.47;
+  line-height: 48px;
 }
 
 
@@ -264,6 +266,7 @@ ul {
   font-family: "gilroy", "Arial", sans-serif;
   color: #000000;
   text-decoration: none;
+  letter-spacing: 0.18px;
 }
 
 .container legend {
@@ -275,10 +278,10 @@ ul {
 }
 
 .container li {
-  font-weight: 300;
-  font-size: 14px;
+  font-weight: 800;
+  font-size: 16px;
   line-height: 40px;
-  font-family: "Open Sans", "Arial", sans-serif;
+  font-family: "gilroy", "Arial", sans-serif;
   color: #000000;
 }
 .button-sort-active {
@@ -306,7 +309,7 @@ ul {
   font-size: 16px;
   line-height: 24px;
   font-family: "gilroy", "Arial", sans-serif;
-  color: #000000;
+  color: #464646;
 }
 
 
@@ -315,7 +318,7 @@ ul {
   justify-content: flex-start;
   align-items: flex-start;
   width: 100%;
-  margin-top: 12px;
+  margin-top: 13px;
 }
 
 
@@ -352,8 +355,8 @@ ul {
   margin-left: auto;
 }
 
-.catalog-goods {
-  letter-spacing: 3.5px;
+.catalog-goods a {
+  letter-spacing: 3.6px;
 }
 
 
@@ -365,17 +368,22 @@ ul {
   display: block;
 }
 
+.context-menu-items a {
+  letter-spacing: 0.15px;
+  line-height: 36px;
+}
+
 .search-text {
   position: relative;
 
-  padding-left: 36px;
+  padding-left: 38px;
 }
 
 .search::before {
   content: "";
   position: absolute;
-  top: 9px;
-  left: 0;
+  top: 8px;
+  left: 3px;
 
   width: 20px;
   height: 20px;
@@ -384,6 +392,10 @@ ul {
   background-repeat: no-repeat;
   background-position: 0 0;
   opacity: 1;
+}
+
+.comparison, .basket {
+  line-height: 30px;
 }
 .search-text button {
   opacity: 0;
@@ -436,6 +448,7 @@ ul {
   position: relative;
 
   padding-left: 10px;
+  line-height: 30px;
 }
 .autorisation li:last-child {
   padding-left: 0;
@@ -445,8 +458,8 @@ ul {
 .login-link::before {
   content: "";
   position: absolute;
-  top: 10px;
-  left: -15px;
+  top: 9px;
+  left: -18px;
 
   width: 20px;
   height: 20px;
@@ -468,13 +481,13 @@ li .logout-link {
 .comparison {
   position: relative;
 
-  padding-left: 10px;
+  padding-left: 11px;
 }
 .comparison::before {
   content: "";
   position: absolute;
-  top: 10px;
-  left: -10px;
+  top: 11px;
+  left: -9px;
 
   width: 20px;
   height: 20px;
@@ -497,8 +510,8 @@ li .logout-link {
 .basket::before {
   content: "";
   position: absolute;
-  top: 10px;
-  left: -10px;
+  top: 9px;
+  left: -13px;
 
   width: 20px;
   height: 20px;
@@ -651,7 +664,7 @@ li .logout-link {
   font-family: "gilroy", "Arial", sans-serif;
   color: #000000;
   text-decoration: none;
-  letter-spacing: 0.2px;
+  letter-spacing: 0.18px;
 }
 
 .title-price-container {
@@ -692,6 +705,7 @@ li .logout-link {
 .about ul {
   margin-top: 66px;
   margin-bottom: 62px;
+  padding-left: 36px;
 }
 
 .about li {
@@ -805,7 +819,7 @@ li .logout-link {
   width: 32px;
   height: 32px;
 
-  background-image: url("data:image/svg+xml;utf8, %3csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3e%3cpath fill='#FFF' d='M16 0C7.164 0 0 7.163 0 16s7.164 16 16 16c8.837 0 16-7.164 16-16S24.837 0 16 0zm4.062 9.455h-3.021v3.444h3.021v3.445h-3.021v8.61H14.02v-8.61H11v-3.445h3.021V9.455c0-1.902 1.353-3.445 3.021-3.445h3.021v3.445z'/%3e%3c/svg%3e");
+  background-image: url("data:image/svg+xml;utf8, %3csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3e%3cpath fill='#7e7e7e' d='M16 0C7.164 0 0 7.163 0 16s7.164 16 16 16c8.837 0 16-7.164 16-16S24.837 0 16 0zm4.062 9.455h-3.021v3.444h3.021v3.445h-3.021v8.61H14.02v-8.61H11v-3.445h3.021V9.455c0-1.902 1.353-3.445 3.021-3.445h3.021v3.445z'/%3e%3c/svg%3e");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -814,7 +828,7 @@ li .logout-link {
   width: 32px;
   height: 32px;
 
-  background-image: url("data:image/svg+xml;utf8, %3csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3e%3cg fill='#FFF'%3e%3cpath d='M20.916 16a4.938 4.938 0 1 1-9.877 0c0-.394.051-.773.138-1.14h-.897v6.838h11.396V14.86h-.897c.086.367.137.746.137 1.14z'/%3e%3cpath d='M15.978 18.659c1.466 0 2.659-1.193 2.659-2.659s-1.193-2.659-2.659-2.659c-1.466 0-2.659 1.193-2.659 2.659s1.192 2.659 2.659 2.659zM18.637 10.302h3.039v3.039h-3.039z'/%3e%3cpath d='M16 0C7.164 0 0 7.164 0 16c0 8.837 7.164 16 16 16 8.837 0 16-7.163 16-16 0-8.836-7.163-16-16-16zm7.955 21.698a2.285 2.285 0 0 1-2.279 2.279H10.279A2.285 2.285 0 0 1 8 21.698V10.302a2.286 2.286 0 0 1 2.279-2.279h11.396a2.286 2.286 0 0 1 2.279 2.279v11.396z'/%3e%3c/g%3e%3c/svg%3e");
+  background-image: url("data:image/svg+xml;utf8, %3csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3e%3cg fill='#7e7e7e'%3e%3cpath d='M20.916 16a4.938 4.938 0 1 1-9.877 0c0-.394.051-.773.138-1.14h-.897v6.838h11.396V14.86h-.897c.086.367.137.746.137 1.14z'/%3e%3cpath d='M15.978 18.659c1.466 0 2.659-1.193 2.659-2.659s-1.193-2.659-2.659-2.659c-1.466 0-2.659 1.193-2.659 2.659s1.192 2.659 2.659 2.659zM18.637 10.302h3.039v3.039h-3.039z'/%3e%3cpath d='M16 0C7.164 0 0 7.164 0 16c0 8.837 7.164 16 16 16 8.837 0 16-7.163 16-16 0-8.836-7.163-16-16-16zm7.955 21.698a2.285 2.285 0 0 1-2.279 2.279H10.279A2.285 2.285 0 0 1 8 21.698V10.302a2.286 2.286 0 0 1 2.279-2.279h11.396a2.286 2.286 0 0 1 2.279 2.279v11.396z'/%3e%3c/g%3e%3c/svg%3e");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -823,7 +837,7 @@ li .logout-link {
   width: 32px;
   height: 32px;
 
-  background-image: url("data:image/svg+xml;utf8, %3csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3e%3cpath fill='#FFF' d='M16 0C7.164 0 0 7.164 0 16c0 8.837 7.164 16 16 16 8.837 0 16-7.163 16-16 0-8.836-7.163-16-16-16zm7.944 12.809c-.251 6.516-3.463 10.832-10.992 10.702h-.486c-.447 0-4.543-.443-5.344-1.823 2.479.19 4.247-.406 5.12-1.136-1.048-.289-2.923-.461-3.251-2.848.384.104.618.221 1.299.113-1.307-.824-2.758-1.519-2.679-3.643.311.317 1.164.518 1.46.457-.768-.233-2.149-3.244-.974-4.781 1.984 1.79 4.075 3.482 7.804 3.643.227-2.214 1.24-3.699 3.168-4.325 1.84-.479 3.255.26 3.901 1.138.737-.224 1.453-.466 2.193-.685-.004.833-.569 1.463-.935 1.709.747.165 1.423-.475 1.423-.475-.184.963-1.094 1.725-1.707 1.954z'/%3e%3c/svg%3e");
+  background-image: url("data:image/svg+xml;utf8, %3csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3e%3cpath fill='#7e7e7e' d='M16 0C7.164 0 0 7.164 0 16c0 8.837 7.164 16 16 16 8.837 0 16-7.163 16-16 0-8.836-7.163-16-16-16zm7.944 12.809c-.251 6.516-3.463 10.832-10.992 10.702h-.486c-.447 0-4.543-.443-5.344-1.823 2.479.19 4.247-.406 5.12-1.136-1.048-.289-2.923-.461-3.251-2.848.384.104.618.221 1.299.113-1.307-.824-2.758-1.519-2.679-3.643.311.317 1.164.518 1.46.457-.768-.233-2.149-3.244-.974-4.781 1.984 1.79 4.075 3.482 7.804 3.643.227-2.214 1.24-3.699 3.168-4.325 1.84-.479 3.255.26 3.901 1.138.737-.224 1.453-.466 2.193-.685-.004.833-.569 1.463-.935 1.709.747.165 1.423-.475 1.423-.475-.184.963-1.094 1.725-1.707 1.954z'/%3e%3c/svg%3e");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -916,8 +930,13 @@ li .logout-link {
 
 .context-menu-items li {
   margin-left: 60px;
-  padding: 3px 0;
+  padding: 0;
 }
+
+.context-menu-items li:nth-child(6) {
+  margin-left: 75px;
+}
+
 
 .slider {
   position: relative;
@@ -943,13 +962,13 @@ li .logout-link {
   margin: 0;
   margin-top: 78px;
   padding: 0;
-
+  padding-left: 5px;
   font-weight: 800;
   font-size: 47px;
   line-height: 56px;
   font-family: "gilroy", "Arial", sans-serif;
   color: #000000;
-  letter-spacing: 1px;
+  letter-spacing: 0.47px;
 }
 
 .slide-number::before {
@@ -1014,7 +1033,7 @@ li .logout-link {
   color: #000000;
   text-transform: uppercase;
   text-decoration: none;
-  letter-spacing: 4px;
+  letter-spacing: 3.6px;
 }
 
 
@@ -1028,17 +1047,21 @@ li .logout-link {
   line-height: 48px;
   font-family: "gilroy", "Arial", sans-serif;
   color: #000000;
+  letter-spacing: 0.36px;
 }
 
 .slide-text {
-  margin-top: 22px;
-  margin-bottom: 47px;
+  margin-top: 18px;
+  margin-bottom: 49px;
   padding: 0;
-  padding-right: 80px;
+  padding-right: 78px;
+  letter-spacing: 0.15px;
+  line-height: 30px;
+  padding-left: 5px;
 }
 
 .slide-table {
-  margin-top: 52px;
+  margin-top: 51px;
 }
 
 .slide-button::before {
@@ -1058,7 +1081,7 @@ li .logout-link {
   content: "";
   position: absolute;
   top: -12px;
-  left: -41px;
+  left: -43px;
   z-index: -1;
 
   width: 220px;
@@ -1074,9 +1097,9 @@ li .logout-link {
   display: inline-block;
   width: 8px;
   height: 8px;
-  margin-right: 22px;
+  margin-right: 24px;
 
-  vertical-align: top;
+  vertical-align: middle;
 
   background-color: transparent;
   border: 1px solid #050505;
@@ -1087,8 +1110,8 @@ li .logout-link {
 
 .slider-controls {
   position: absolute;
-  top: 329px;
-  left: 999px;
+  top: 316px;
+  left: 1002px;
   z-index: 20;
 
   font-size: 0;;
@@ -1107,8 +1130,8 @@ li .logout-link {
 #product-1:checked ~ .slider-controls label[for="product-1"],
 #product-2:checked ~ .slider-controls label[for="product-2"],
 #product-3:checked ~ .slider-controls label[for="product-3"] {
-  width: 8px;
-  height: 8px;
+  width: 4px;
+  height: 4px;
 
   border: 1px solid #000000;
   border-radius: 50%;
@@ -1311,13 +1334,14 @@ li .logout-link {
 .slider-services {
   width: 100%;
   min-height: 290px;
-  margin-top: 160px;
+  margin-top: 164px;
 
-  background-color: #e5e2e2;
+  background-color: #e5e5e5;
 }
 .slider-services-controls label {
   position: relative;
-  top: -11px;
+  top: -13px;
+  left: 2px;
   z-index: 1;
 
   padding-bottom: 42px;
@@ -1328,7 +1352,7 @@ li .logout-link {
   font-family: "gilroy", "Arial", sans-serif;
   color: #000000;
   text-transform: uppercase;
-  letter-spacing: 4px;
+  letter-spacing: 3.6px;
 
   background: none;
   border: none;
@@ -1369,7 +1393,7 @@ li .logout-link {
   content: "";
   position: absolute;
   top: -8px;
-  left: -15px;
+  left: -19px;
   z-index: -1;
 
   width: 280px;
@@ -1391,8 +1415,8 @@ li .logout-link {
 .label-service-2::before {
   content: "";
   position: absolute;
-  top: 8px;
-  left: -22px;
+  top: 6px;
+  left: -25px;
   z-index: -1;
 
   width: 160px;
@@ -1442,7 +1466,7 @@ li .logout-link {
   content: "";
   position: absolute;
   top: 6px;
-  left: -36px;
+  left: -38px;
   z-index: -1;
 
   width: 160px;
@@ -1523,23 +1547,24 @@ li .logout-link {
 
 .services-content h3 {
   position: relative;
-  top: -12px;
+  top: -26px;
   left: 0;
 
   margin: 0;
   padding: 0;
-
   font-weight: 800;
   font-size: 47px;
   font-family: "gilroy", "Arial", sans-serif;
   color: #000000;
-  letter-spacing: 0.9px;
+  letter-spacing: 0.47px;
+  line-height: 48px;
 }
 
 .services-content p {
-  padding-top: 14px;
+  padding-top: 0;
+  margin-top: 4px;
 
-  letter-spacing: 0.3px;
+  letter-spacing: 0.15px;
 }
 
 .services-content li {
@@ -1739,7 +1764,7 @@ section.logotypes {
 
   font-weight: 300;
   font-size: 14px;
-  line-height: 40px;
+  line-height: 36px;
   font-family: "Open Sans", "Arial", sans-serif;
   color: #464646;
   text-indent: 0;
@@ -1763,7 +1788,7 @@ textarea.write-us-input {
   font-family: "gilroy", "Arial", sans-serif;
   color: #000000;
   text-transform: uppercase;
-  letter-spacing: 4px;
+  letter-spacing: 3.6px;
 
   background: none;
   border: none;
@@ -1837,7 +1862,8 @@ textarea.write-us-input {
   font-size: 47px;
   font-family: "gilroy", "Arial", sans-serif;
   color: #000000;
-  letter-spacing: 0.6px;
+  letter-spacing: 0.47px;
+  line-height: 48px;
 }
 
 .name-page {
@@ -1877,6 +1903,7 @@ textarea.write-us-input {
 .bread-crumbs a {
   color: #000000;
   text-decoration: none;
+  line-height: 24px;
 }
 
 .bread-crumbs li {
@@ -1963,19 +1990,19 @@ textarea.write-us-input {
   font-family: "gilroy", "Arial", sans-serif;
   color: #000000;
   text-transform: uppercase;
-  letter-spacing: 3.5px;
+  letter-spacing: 3.2px;
 }
 
 .filter-management-container-right h3 {
   padding-left: 73px;
 }
 .filter-management-container-right a {
-  font-weight: 300;
+  font-weight: 400;
   font-size: 14px;
-  line-height: 40px;
+  line-height: 18px;
   font-family: "Open Sans", "Arial", sans-serif;
   color: #000000;
-  letter-spacing: 0.3px;
+  letter-spacing: 0px;
   text-decoration: none;
 
   background: none;
@@ -2172,6 +2199,7 @@ textarea.write-us-input {
   font-size: 14px;
   font-family: "Open Sans", "Arial", sans-serif;
   color: #000000;
+  line-height: 40px;
 
   cursor: pointer;
 }
@@ -2373,7 +2401,7 @@ textarea.write-us-input {
   font-family: "gilroy", "Arial", sans-serif;
   color: #000000;
   text-transform: uppercase;
-  letter-spacing: 3.5px;
+  letter-spacing: 3.2px;
 }
 
 .forward-button {
@@ -2385,7 +2413,7 @@ textarea.write-us-input {
   font-family: "gilroy", "Arial", sans-serif;
   color: #000000;
   text-transform: uppercase;
-  letter-spacing: 3.5px;
+  letter-spacing: 3.2px;
 }
 
 
@@ -2428,7 +2456,7 @@ a.in-the-cart {
   color: #000000;
   text-transform: uppercase;
   text-decoration: none;
-  letter-spacing: 4px;
+  letter-spacing: 3.6px;
 }
 
 .in-the-cart::before {
@@ -2467,7 +2495,7 @@ a.to-the-comparison {
 
   font-weight: 300;
   font-size: 13px;
-  line-height: 18px;
+  line-height: 36px;
   font-family: "Open Sans", "Arial", sans-serif;
   color: rgba(0, 0, 0, 0.5);
 }
@@ -2495,4 +2523,15 @@ a.to-the-comparison {
 
 .passive {
   opacity: 0.3;
+}
+
+.slide-table th {
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 20px;
+  letter-spacing: 0.13px;
+}
+
+.menu-item a {
+  letter-spacing: 3.6px;
 }
