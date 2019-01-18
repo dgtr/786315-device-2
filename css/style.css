@@ -95,7 +95,7 @@ input[type="radio"].visually-hidden {
 
   border: 0;
 
-  clip: rect(0 0 0 0);
+  clip: rect(0, 0, 0, 0);
   clip-path: inset(100%);
 }
 
@@ -142,9 +142,9 @@ ul {
   letter-spacing: 3.5px;
 }
 
-.main-header .logo {
+.main-header  img {
   position: relative;
-  bottom: 19px;
+  bottom: 22px;
 
   width: 163px;
   height: 35px;
@@ -191,6 +191,7 @@ ul {
   border: none;
   outline: none;
   width: 265px;
+  vertical-align: super;
 }
 
 
@@ -314,7 +315,7 @@ ul {
   justify-content: flex-start;
   align-items: flex-start;
   width: 100%;
-  margin-top: 25px;
+  margin-top: 12px;
 }
 
 
@@ -385,7 +386,7 @@ ul {
   opacity: 1;
 }
 .search-text button {
-  display: none;
+  opacity: 0;
   width: 85px;
   height: 45px;
 
@@ -393,14 +394,12 @@ ul {
   border: 2px solid black;
 }
 
-.search-text-input:focus {
-  vertical-align: super;
-}
 .search-text-input:focus ~ .search-button {
-  display: inline-block;
+  opacity: 1;
 }
 
-.search-text-input:focus ~ .search-button::after {
+
+.search-button::after {
   content: "";
   position: absolute;
   top: 43px;
@@ -410,7 +409,18 @@ ul {
   height: 2px;
 
   background-color: black;
+  opacity: 0;
 }
+
+.search-text-input:focus ~ .search-button::after {
+  opacity: 1;
+}
+
+.search-button:focus ~ .search-button::after {
+  opacity: 1;
+}
+
+
 
 .search-button:hover {
   background-color: black;
@@ -444,6 +454,11 @@ ul {
   background-image: url("../img/user.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+}
+
+li .logout-link {
+  padding-left: 22px;
+  opacity: 0.3;
 }
 
 .footer-wrapper .login-link::before {
@@ -1916,7 +1931,7 @@ textarea.write-us-input {
   margin: 0;
   padding: 0;
   padding-top: 13px;
-  padding-left: 46px;
+  padding-left: 51px;
 }
 
 .filter-content-background {
@@ -1954,47 +1969,45 @@ textarea.write-us-input {
 .filter-management-container-right h3 {
   padding-left: 73px;
 }
-.filter-management-container-right button {
+.filter-management-container-right a {
   font-weight: 300;
   font-size: 14px;
   line-height: 40px;
   font-family: "Open Sans", "Arial", sans-serif;
   color: #000000;
   letter-spacing: 0.3px;
+  text-decoration: none;
 
   background: none;
   border: none;
 }
 
 .button-sort-rest {
-  padding-left: 23px;
+  padding-left: 29px;
 
   opacity: 0.3;
 }
 
-.filter-management-container-right ul::before {
-  content: "";
+.button-sort-increase {
   position: absolute;
   top: 30px;
-  right: -236px;
+  right: -243px;
 
   width: 11px;
   height: 10px;
 
-  background-image: url("../img/icon-up-dir.svg");
   opacity: 0.3;
 }
 
-.filter-management-container-right ul::after {
-  content: "";
+.button-sort-decrease {
+  display: block;
   position: absolute;
   top: 30px;
-  right: -266px;
+  right: -273px;
 
   width: 11px;
   height: 10px;
 
-  background-image: url("../img/icon-down-dir.svg");
 }
 
 .filter-condition fieldset {
@@ -2124,8 +2137,9 @@ textarea.write-us-input {
 
 .price-controls label {
   display: inline-block;
-  width: 90px;
-
+  width: 20px;
+  margin: 0;
+  padding: 0;
   font-weight: 300;
   font-size: 14px;
   line-height: 24px;
@@ -2136,18 +2150,13 @@ textarea.write-us-input {
 }
 
 .price-controls input {
-  width: 60px;
-  margin-left: 10px;
-  padding: 8px 10px;
-
+  width: 68px;
   font-size: 16px;
   font-family: Roboto, Arial, sans-serif;
-  text-align: center;
   color: #283136;
-
+  opacity: 0.2;
   background: #f1f1f1;
   border: none;
-  border-radius: 5px;
 }
 
 .max-price {
@@ -2355,11 +2364,12 @@ textarea.write-us-input {
 }
 
 .back-button {
+  text-decoration: none;
   padding-left: 30px;
 
   font-weight: 800;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 70px;
   font-family: "gilroy", "Arial", sans-serif;
   color: #000000;
   text-transform: uppercase;
@@ -2368,10 +2378,10 @@ textarea.write-us-input {
 
 .forward-button {
   padding-right: 26px;
-
+  text-decoration: none;
   font-weight: 800;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 70px;
   font-family: "gilroy", "Arial", sans-serif;
   color: #000000;
   text-transform: uppercase;
@@ -2380,13 +2390,13 @@ textarea.write-us-input {
 
 
 .number-button {
-  padding-top: 25px;
+  text-decoration: none;
   padding-right: 12px;
   padding-left: 16px;
 
   font-weight: 800;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 70px;
   font-family: "gilroy", "Arial", sans-serif;
   color: #000000;
   text-transform: uppercase;
@@ -2477,4 +2487,12 @@ a.to-the-comparison {
 
 .footer-rowwrapper-1 .autorisation li {
   padding-left: 21px;
+}
+
+.popular-item-2 h3 {
+  width: 125px;
+}
+
+.passive {
+  opacity: 0.3;
 }

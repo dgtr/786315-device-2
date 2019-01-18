@@ -39,7 +39,10 @@
       </form>
       <ul class="autorisation">
         <li>
-          <a class="login-link" href="login.html" aria-label="Авторизация пользователя на сайте">Войти</a>
+          <a class="login-link" href="login.html" aria-label="Авторизация пользователя на сайте">Валентин Петухов</a>
+        </li>
+        <li>
+          <a class="logout-link" href="" aria-label="Авторизация пользователя на сайте">Выйти</a>
         </li>
       </ul>
       <ul class="user-options">
@@ -98,13 +101,23 @@
               <h3>Сортировка:</h3>
               <ul>
                 <li>
-                  <button class="button-sort-active">По цене</button>
+                  <a href="" class="button-sort-active">По цене</a>
                 </li>
                 <li>
-                  <button class="button-sort-rest">По типу</button>
+                  <a href="" class="button-sort-rest">По типу</a>
                 </li>
                 <li>
-                  <button class="button-sort-rest">По популярности</button>
+                  <a href="" class="button-sort-rest">По популярности</a>
+                </li>
+                <li>
+                  <a href="">
+                    <img class="button-sort-increase" src="img/icon-up-dir.svg" width="11" height="10" alt="Сортировка по возрастанию">
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img class="button-sort-decrease" src="img/icon-down-dir.svg" width="11" height="10" alt="Сортировка по убыванию">
+                  </a>
                 </li>
               </ul>
             </header>
@@ -127,8 +140,10 @@
                   <div class="toggle toggle-max"></div>
                 </div>
                 <div class="price-controls">
-                  <label class="min-price">от 0</label>
-                  <label class="max-price">до 5000</label>
+                  <label class="min-price" for="min-price">от</label>
+                  <input type="text" value="0" id="min-price">
+                  <label class="max-price" for="max-price">до</label>
+                  <input type="text" value="5000" id="max-price">
                 </div>
               </div>
             </fieldset>
@@ -243,13 +258,13 @@
           </ul>
           <div class="paginator-outer">
             <div class="paginator-inner">
-              <button class="back-button">назад</button>
+              <a href="" class="back-button">назад</a>
               <div class="botton-container">
-                <button class="number-button">1</button>
-                <button class="number-button">2</button>
-                <button class="number-button">3</button>
+                <a href="" class="number-button">1</a>
+                <a href="" class="number-button passive">2</a>
+                <a href="" class="number-button passive">3</a>
               </div>
-              <button class="forward-button">вперед</button>
+              <a href="" class="forward-button">вперед</a>
             </div>
           </div>
         </section>
