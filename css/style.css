@@ -73,7 +73,7 @@ img {
   margin-right: auto;
   margin-left: auto;
   padding: 0;
-  padding-top: 61px;
+  padding-top: 50px;
 
   color: #ffffff;
 }
@@ -241,6 +241,7 @@ ul {
   text-decoration: none;
 
   opacity: 1;
+  padding-top: 7px;
 }
 
 .main-footer a:hover {
@@ -638,7 +639,7 @@ li .logout-link {
 
 .product-list li:not(:last-child)::before,
 .product-list li:not(:last-child)::after {
-  display: none;
+  display: block;
 }
 
 
@@ -698,7 +699,7 @@ li .logout-link {
 
 .office-map {
   margin: 0;
-  margin-top: 42px;
+  margin-top: 40px;
   margin-bottom: 69px;
 }
 
@@ -733,7 +734,7 @@ li .logout-link {
   position: relative;
 
   display: block;
-  margin-bottom: 90px;
+  margin-bottom: 88px;
   margin-left: 23px;
 
   font-weight: 800;
@@ -743,11 +744,11 @@ li .logout-link {
   color: #000000;
   text-transform: uppercase;
   text-decoration: none;
-  letter-spacing: 4px;
+  letter-spacing: 3.6px;
 }
 
 .info-about .contacts .button {
-  margin-left: 43px;
+  margin-left: 41px;
 }
 
 .info-about .button::before {
@@ -778,12 +779,14 @@ li .logout-link {
 
 
 .info-about .contacts .button::before {
-  left: -43px;
+  left: -41px;
+  top: 6px;
 }
 
 .footer-rowwrapper-1 {
   display: flex;
   justify-content: flex-start;
+  padding-top: 8px;
 }
 
 .footer-rowwrapper-2 {
@@ -796,7 +799,7 @@ li .logout-link {
   display: flex;
   justify-content: space-between;
   width: 425px;
-  margin-top: 24px;
+  margin-top: 13px;
 
   font-weight: 800;
   font-size: 18px;
@@ -858,8 +861,8 @@ li .logout-link {
 }
 
 .footer-social li {
-  padding-right: 10px;
-  padding-left: 10px;
+  padding-right: 9px;
+  padding-left: 13px;
 }
 
 .logo-html {
@@ -875,8 +878,8 @@ li .logout-link {
 .footer-social::before {
   content: "";
   position: absolute;
-  top: 14px;
-  left: -502px;
+  top: 16px;
+  left: -496px;
 
   width: 80px;
   height: 7px;
@@ -1024,7 +1027,7 @@ li .logout-link {
 .slide-button {
   position: relative;
 
-  margin-left: 45px;
+  margin-left: 48px;
 
   font-weight: 800;
   font-size: 18px;
@@ -1068,7 +1071,7 @@ li .logout-link {
   content: "";
   position: absolute;
   top: 5px;
-  left: -41px;
+  left: -43px;
   z-index: -1;
 
   width: 220px;
@@ -1854,7 +1857,7 @@ textarea.write-us-input {
   position: relative;
 
   margin: 0;
-  padding-top: 98px;
+  padding-top: 88px;
   padding-right: 60px;
   padding-left: 60px;
 
@@ -1888,7 +1891,7 @@ textarea.write-us-input {
   justify-content: flex-start;
   margin: 0;
   padding: 0;
-  padding-top: 23px;
+  padding-top: 14px;
   padding-left: 60px;
 
   font-weight: 300;
@@ -1957,8 +1960,8 @@ textarea.write-us-input {
   display: flex;
   margin: 0;
   padding: 0;
-  padding-top: 13px;
-  padding-left: 51px;
+  padding-top: 18px;
+  padding-left: 56px;
 }
 
 .filter-content-background {
@@ -2018,7 +2021,7 @@ textarea.write-us-input {
 .button-sort-increase {
   position: absolute;
   top: 30px;
-  right: -243px;
+  right: -250px;
 
   width: 11px;
   height: 10px;
@@ -2030,7 +2033,7 @@ textarea.write-us-input {
   display: block;
   position: absolute;
   top: 30px;
-  right: -273px;
+  right: -280px;
 
   width: 11px;
   height: 10px;
@@ -2252,18 +2255,18 @@ textarea.write-us-input {
 
 .color ul {
   padding: 0;
-  padding-top: 7px;
+  padding-top: 3px;
 }
 
 .color li {
-  padding-bottom: 9px;
+  padding-bottom: 0px;
 }
 
 .bluetooth legend {
-  padding-top: 24px;
+  padding-top: 27px;
 }
 .bluetooth legend::before {
-  top: 12px;
+  top: 15px;
 }
 
 .attribute-field-radio {
@@ -2346,7 +2349,7 @@ textarea.write-us-input {
 .filter button::before {
   content: "";
   position: absolute;
-  top: 6px;
+  top: 8px;
   left: 0;
   z-index: -1;
 
@@ -2534,4 +2537,42 @@ a.to-the-comparison {
 
 .menu-item a {
   letter-spacing: 3.6px;
+}
+
+.slide-table th {
+  padding-top: 4px;
+}
+
+.main-footer .login-link {
+  padding-top: 4px;
+}
+
+.main-footer .login-link::before {
+  top: 14px;
+}
+
+.main-footer .comparison::before {
+  top: 16px;
+  left: -8px;
+}
+
+.main-footer .basket::before {
+  top: 14px;
+  left: -12px;
+}
+
+.main-footer .comparison {
+  padding-top: 5px;
+}
+
+.main-footer .basket {
+  padding-top: 5px;
+}
+
+.address p {
+  margin-top: 13px;
+}
+
+.phone p {
+  margin-top: 13px;
 }
