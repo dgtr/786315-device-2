@@ -637,9 +637,9 @@ li .logout-link {
   letter-spacing: 2px;
 }
 
-.product-list li:not(:last-child)::before,
-.product-list li:not(:last-child)::after {
-  display: block;
+.product-list li:not(.new)::before,
+.product-list li:not(.new)::after {
+  display: none;
 }
 
 
