@@ -3,27 +3,11 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="format-detection" content="telephone=no">
   <title>"Интернет магазин гаджетов &laquo;Девайс&raquo;"</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300&amp;subset=cyrillic" rel="stylesheet">
   <link href="./css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
-  <!-- Pixel Glass -->
-  <style>
-    HTML {
-background-repeat: no-repeat;
-background-position:  50% 0;
-/* По умолчанию мобильный макет */
-background-image: url( "img/device-index.jpg" );
-}
-
-BODY {
-opacity: .5;
-}
-</style>
-  <link rel="stylesheet" href="pixel-glass/styles.css">
-  <script src="pixel-glass/script.js"></script>
-  <!-- // Pixel Glass -->
-
 </head>
 
 <body>
@@ -262,22 +246,27 @@ opacity: .5;
     <section class="logotypes">
       <h2 class="visually-hidden">Логотипы производителей нащих товаров</h2>
       <ul>
-        <li>
-          <img src="img/logo-1.png" width="260" height="100" alt="">
+        <li class="logotype-1">
+          <img class="logotype-1-gray" src="img/logo-1-gray.png" width="260" height="100" alt="">
+          <img class="logotype-1-color" src="img/logo-1.png" width="260" height="100" alt="">
         </li>
-        <li>
-          <img src="img/logo-2.png" width="260" height="100" alt="">
+        <li class="logotype-2">
+          <img class="logotype-2-gray" src="img/logo-2-gray.png" width="260" height="100" alt="">
+          <img class="logotype-2-color" src="img/logo-2.png" width="260" height="100" alt="">
         </li>
-        <li>
-          <img src="img/logo-3.png" width="260" height="100" alt="">
+        <li class="logotype-3">
+          <img class="logotype-3-gray" src="img/logo-3-gray.png" width="260" height="100" alt="">
+          <img class="logotype-3-color" src="img/logo-3.png" width="260" height="100" alt="">
         </li>
-        <li>
-          <img src="img/logo-4.png" width="260" height="100" alt="">
+        <li class="logotype-4">
+          <img class="logotype-4-gray" src="img/logo-4-gray.png" width="260" height="100" alt="">
+          <img class="logotype-4-color" src="img/logo-4.png" width="260" height="100" alt="">
         </li>
       </ul>
     </section>
     <section class="info-about container">
       <h2 class="visually-hidden">Информация о нас</h2>
+      <div class="info-about-container">
       <section class="about">
         <h3>О нас</h3>
         <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
@@ -297,8 +286,9 @@ opacity: .5;
             <img src="./img/map.jpg" width="560" height="222" alt="Наш офис на карте">
           </a>
         </figure>
-        <a href="" class="button write-us-button">напишите нам</a>
+        <a href="write-us.html" class="button write-us-button">напишите нам</a>
       </section>
+    </div>
     </section>
   </main>
   <footer class="main-footer">
@@ -384,36 +374,8 @@ opacity: .5;
     <div><img src="img/map-big.png" width="960" height="559" alt="г. Москва, ул. Строителей, 15"></div>
     <button class="modal-close" type="button">Закрыть</button>
   </section>
-  <script>
-    var link = document.querySelector(".write-us-button");
-    var popup = document.querySelector(".modal-write-us");
-    var close = popup.querySelector(".modal-close");
-    var uname = popup.querySelector("[name=user-name]");
-    link.addEventListener("click", function(evt) {
-      evt.preventDefault();
-      popup.classList.add("modal-show");
-      uname.focus();
-    });
-    close.addEventListener("click", function(evt) {
-      evt.preventDefault();
-      popup.classList.remove("modal-show");
-    });
-  </script>
-
-  <script>
-    var linkmap = document.querySelector(".our-map");
-    var popupmap = document.querySelector(".modal-map");
-    var closemap = popupmap.querySelector(".modal-close");
-    linkmap.addEventListener("click", function(evt) {
-      evt.preventDefault();
-      popupmap.classList.add("modal-show");
-    });
-    closemap.addEventListener("click", function(evt) {
-      evt.preventDefault();
-      popupmap.classList.remove("modal-show");
-    });
-  </script>
-
+  <script src="js/write-us-button.js"></script>
+  <script src="js/map.js"></script>
 </body>
 
 </html>

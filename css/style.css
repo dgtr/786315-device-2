@@ -563,8 +563,6 @@ li .logout-link {
 
 
 .info-about {
-  display: flex;
-  justify-content: space-between;
   width: 1160px;
   margin-top: 78px;
 }
@@ -581,6 +579,7 @@ li .logout-link {
 
 .about {
   width: 474px;
+  flex-shrink: 0;
 }
 
 .contacts {
@@ -822,7 +821,7 @@ li .logout-link {
   width: 32px;
   height: 32px;
 
-  background-image: url("data:image/svg+xml;utf8, %3csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3e%3cpath fill='#7e7e7e' d='M16 0C7.164 0 0 7.163 0 16s7.164 16 16 16c8.837 0 16-7.164 16-16S24.837 0 16 0zm4.062 9.455h-3.021v3.444h3.021v3.445h-3.021v8.61H14.02v-8.61H11v-3.445h3.021V9.455c0-1.902 1.353-3.445 3.021-3.445h3.021v3.445z'/%3e%3c/svg%3e");
+  background-image: url("data:image/svg+xml;utf8, %3csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3e%3cpath fill='%237e7e7e' d='M16 0C7.164 0 0 7.163 0 16s7.164 16 16 16c8.837 0 16-7.164 16-16S24.837 0 16 0zm4.062 9.455h-3.021v3.444h3.021v3.445h-3.021v8.61H14.02v-8.61H11v-3.445h3.021V9.455c0-1.902 1.353-3.445 3.021-3.445h3.021v3.445z'/%3e%3c/svg%3e");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -831,7 +830,7 @@ li .logout-link {
   width: 32px;
   height: 32px;
 
-  background-image: url("data:image/svg+xml;utf8, %3csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3e%3cg fill='#7e7e7e'%3e%3cpath d='M20.916 16a4.938 4.938 0 1 1-9.877 0c0-.394.051-.773.138-1.14h-.897v6.838h11.396V14.86h-.897c.086.367.137.746.137 1.14z'/%3e%3cpath d='M15.978 18.659c1.466 0 2.659-1.193 2.659-2.659s-1.193-2.659-2.659-2.659c-1.466 0-2.659 1.193-2.659 2.659s1.192 2.659 2.659 2.659zM18.637 10.302h3.039v3.039h-3.039z'/%3e%3cpath d='M16 0C7.164 0 0 7.164 0 16c0 8.837 7.164 16 16 16 8.837 0 16-7.163 16-16 0-8.836-7.163-16-16-16zm7.955 21.698a2.285 2.285 0 0 1-2.279 2.279H10.279A2.285 2.285 0 0 1 8 21.698V10.302a2.286 2.286 0 0 1 2.279-2.279h11.396a2.286 2.286 0 0 1 2.279 2.279v11.396z'/%3e%3c/g%3e%3c/svg%3e");
+  background-image: url("data:image/svg+xml;utf8, %3csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3e%3cg fill='%237e7e7e'%3e%3cpath d='M20.916 16a4.938 4.938 0 1 1-9.877 0c0-.394.051-.773.138-1.14h-.897v6.838h11.396V14.86h-.897c.086.367.137.746.137 1.14z'/%3e%3cpath d='M15.978 18.659c1.466 0 2.659-1.193 2.659-2.659s-1.193-2.659-2.659-2.659c-1.466 0-2.659 1.193-2.659 2.659s1.192 2.659 2.659 2.659zM18.637 10.302h3.039v3.039h-3.039z'/%3e%3cpath d='M16 0C7.164 0 0 7.164 0 16c0 8.837 7.164 16 16 16 8.837 0 16-7.163 16-16 0-8.836-7.163-16-16-16zm7.955 21.698a2.285 2.285 0 0 1-2.279 2.279H10.279A2.285 2.285 0 0 1 8 21.698V10.302a2.286 2.286 0 0 1 2.279-2.279h11.396a2.286 2.286 0 0 1 2.279 2.279v11.396z'/%3e%3c/g%3e%3c/svg%3e");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -840,7 +839,7 @@ li .logout-link {
   width: 32px;
   height: 32px;
 
-  background-image: url("data:image/svg+xml;utf8, %3csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3e%3cpath fill='#7e7e7e' d='M16 0C7.164 0 0 7.164 0 16c0 8.837 7.164 16 16 16 8.837 0 16-7.163 16-16 0-8.836-7.163-16-16-16zm7.944 12.809c-.251 6.516-3.463 10.832-10.992 10.702h-.486c-.447 0-4.543-.443-5.344-1.823 2.479.19 4.247-.406 5.12-1.136-1.048-.289-2.923-.461-3.251-2.848.384.104.618.221 1.299.113-1.307-.824-2.758-1.519-2.679-3.643.311.317 1.164.518 1.46.457-.768-.233-2.149-3.244-.974-4.781 1.984 1.79 4.075 3.482 7.804 3.643.227-2.214 1.24-3.699 3.168-4.325 1.84-.479 3.255.26 3.901 1.138.737-.224 1.453-.466 2.193-.685-.004.833-.569 1.463-.935 1.709.747.165 1.423-.475 1.423-.475-.184.963-1.094 1.725-1.707 1.954z'/%3e%3c/svg%3e");
+  background-image: url("data:image/svg+xml;utf8, %3csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3e%3cpath fill='%237e7e7e' d='M16 0C7.164 0 0 7.164 0 16c0 8.837 7.164 16 16 16 8.837 0 16-7.163 16-16 0-8.836-7.163-16-16-16zm7.944 12.809c-.251 6.516-3.463 10.832-10.992 10.702h-.486c-.447 0-4.543-.443-5.344-1.823 2.479.19 4.247-.406 5.12-1.136-1.048-.289-2.923-.461-3.251-2.848.384.104.618.221 1.299.113-1.307-.824-2.758-1.519-2.679-3.643.311.317 1.164.518 1.46.457-.768-.233-2.149-3.244-.974-4.781 1.984 1.79 4.075 3.482 7.804 3.643.227-2.214 1.24-3.699 3.168-4.325 1.84-.479 3.255.26 3.901 1.138.737-.224 1.453-.466 2.193-.685-.004.833-.569 1.463-.935 1.709.747.165 1.423-.475 1.423-.475-.184.963-1.094 1.725-1.707 1.954z'/%3e%3c/svg%3e");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -956,6 +955,7 @@ li .logout-link {
 
 .slider-item img {
   margin-left: 20px;
+  flex-shrink: 0;
 }
 
 .slide-title {
@@ -1644,31 +1644,6 @@ section.logotypes {
   margin: 0 auto;
   padding: 0;
 
-}
-
-.logotypes li {
-  opacity: 0.3;
-  filter: grayscale(100%);
-}
-
-.logotypes li:nth-child(1):hover {
-  opacity: 1;
-  filter: grayscale(0%);
-}
-
-.logotypes li:nth-child(2):hover {
-  opacity: 1;
-  filter: grayscale(0%);
-}
-
-.logotypes li:nth-child(3):hover {
-  opacity: 1;
-  filter: grayscale(0%);
-}
-
-.logotypes li:nth-child(4):hover {
-  opacity: 1;
-  filter: grayscale(0%);
 }
 
 .popular {
@@ -2575,4 +2550,70 @@ a.to-the-comparison {
 
 .phone p {
   margin-top: 13px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.info-about-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.logotype-1-gray,
+.logotype-2-gray,
+.logotype-3-gray,
+.logotype-4-gray {
+  opacity: 0.3;
+}
+.logotype-1-color {
+  display: none;
+}
+
+.logotype-1:hover .logotype-1-gray {
+  display: none;
+}
+
+.logotype-1:hover .logotype-1-color {
+  display: block;
+  opacity: 1;
+}
+
+.logotype-2-color {
+  display: none;
+}
+
+.logotype-2:hover .logotype-2-gray {
+  display: none;
+}
+
+.logotype-2:hover .logotype-2-color {
+  display: block;
+  opacity: 1;
+}
+
+.logotype-3-color {
+  display: none;
+}
+
+.logotype-3:hover .logotype-3-gray {
+  display: none;
+}
+
+.logotype-3:hover .logotype-3-color {
+  display: block;
+  opacity: 1;
+}
+
+.logotype-4-color {
+  display: none;
+}
+
+.logotype-4:hover .logotype-4-gray {
+  display: none;
+}
+
+.logotype-4:hover .logotype-4-color {
+  display: block;
+  opacity: 1;
 }

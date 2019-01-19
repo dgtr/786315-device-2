@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Напишите нам</title>
+  </head>
+  <body>
+    <h1 class="visually hidden">Вход в личный кабинет</h1>
+    <form class="write-us" method="post"
+          action="https://echo.htmlacademy.ru">
+      <p>
+        <label for="user-name">Ваше имя.</label>
+        <input id="user-name" type="text"
+               name="user-name" placeholder="Имя Фамилия">
+      </p>
+      <p>
+        <label for="user-email">Ваш e-mail.</label>
+        <input id="user-email" type="email"
+               name="user-email" placeholder="email@example.com">
+      </p>
+      <p>
+        <label>
+          Текст письма:
+          <textarea  name="text">
+            В свободной форме
+          </textarea>
+        </label>
+      </p>
+      <label class="visually hidden" for="submit">
+        Отправить.
+        <button type="submit">Отправить</button>
+      </label>
+    </form>
+    <label class="visually hidden" for="close">
+      Закрыть окно входа в личный кабинет.
+      <button id="close" type="button">Закрыть</button>
+    </label>
+  </body>
+</html>
