@@ -568,8 +568,8 @@ li .logout-link {
 }
 
 .info-about h3 {
-  margin-top: 70px;
-  margin-bottom: 54px;
+  margin-top: 59px;
+  margin-bottom: 40px;
 
   font-weight: 800;
   font-size: 47px;
@@ -686,7 +686,7 @@ li .logout-link {
 .contacts h3::before {
   content: "";
   position: absolute;
-  top: -64px;
+  top: -54px;
   left: 0;
 
   width: 80px;
@@ -779,7 +779,7 @@ li .logout-link {
 
 .info-about .contacts .button::before {
   left: -41px;
-  top: 6px;
+  top: 7px;
 }
 
 .footer-rowwrapper-1 {
@@ -869,7 +869,7 @@ li .logout-link {
   height: 35px;
   margin-left: 475px;
 
-  background-image: url("data:image/svg+xml;utf8, %3csvg xmlns='http://www.w3.org/2000/svg' width='26.943' height='34.09' viewBox='0 0 26.943 34.09'%3e%3cpath fill='#FFC600' d='M13.62.017L13.472 0 0 1.412v24.661l13.473 8.017 13.43-7.99.042-.025V1.412L13.62.017zm11.399 12.11L13.495 5.334l-.001-.104-.087.05-.088-.056v.109L1.925 12.118V3.147l11.548-1.212L25.02 3.147v8.98zm-11.614-5.34L24.923 13.5l-4.479 2.64-7.093-4.221-.014 1.415 5.904 3.513-.86.507-5.03-2.992-.014 1.415 3.827 2.275-.782.523-3.031-1.787-.014 1.413 1.853 1.091-1.8 1.081-11.356-6.751 11.371-6.835zm-11.48 8.34l11.411 6.791.016 1.044-7.942-4.728-.015 1.416 7.979 4.795.018 1.076-7.973-4.74-.013 1.414 8.021 4.822.046.025 8.143-4.872-.011-5.177 3.415-2.036v10.021L13.472 31.85 1.925 24.979v-9.852z'/%3e%3c/svg%3e");
+  background-image: url("data:image/svg+xml;utf8, %3csvg xmlns='http://www.w3.org/2000/svg' width='26.943' height='34.09' viewBox='0 0 26.943 34.09'%3e%3cpath fill='%23FFC600' d='M13.62.017L13.472 0 0 1.412v24.661l13.473 8.017 13.43-7.99.042-.025V1.412L13.62.017zm11.399 12.11L13.495 5.334l-.001-.104-.087.05-.088-.056v.109L1.925 12.118V3.147l11.548-1.212L25.02 3.147v8.98zm-11.614-5.34L24.923 13.5l-4.479 2.64-7.093-4.221-.014 1.415 5.904 3.513-.86.507-5.03-2.992-.014 1.415 3.827 2.275-.782.523-3.031-1.787-.014 1.413 1.853 1.091-1.8 1.081-11.356-6.751 11.371-6.835zm-11.48 8.34l11.411 6.791.016 1.044-7.942-4.728-.015 1.416 7.979 4.795.018 1.076-7.973-4.74-.013 1.414 8.021 4.822.046.025 8.143-4.872-.011-5.177 3.415-2.036v10.021L13.472 31.85 1.925 24.979v-9.852z'/%3e%3c/svg%3e");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -960,7 +960,7 @@ li .logout-link {
 
 .slide-title {
   position: relative;
-  z-index: 100;
+  z-index: 1;
 
   margin: 0;
   margin-top: 78px;
@@ -1739,10 +1739,9 @@ section.logotypes {
   min-height: 48px;
   margin-bottom: 32px;
   padding-left: 20px;
-
   font-weight: 300;
   font-size: 14px;
-  line-height: 36px;
+  line-height: 18px;
   font-family: "Open Sans", "Arial", sans-serif;
   color: #464646;
   text-indent: 0;
@@ -1755,11 +1754,13 @@ section.logotypes {
 
 textarea.write-us-input {
   min-height: 156px;
+  line-height: 18px;
+  padding-top: 16px;
 }
 
 .write-us-form button {
   margin-left: 50px;
-
+  margin-top: 17px;
   font-weight: 800;
   font-size: 18px;
   line-height: 24px;
@@ -1776,7 +1777,7 @@ textarea.write-us-input {
 .write-us-form button::before {
   content: "";
   position: absolute;
-  top: 435px;
+  top: 451px;
   left: 100px;
   z-index: -1;
 
@@ -1787,7 +1788,7 @@ textarea.write-us-input {
 }
 
 .write-us-form button:hover::before {
-  top: 424px;
+  top: 433px;
 
   height: 40px;
 }
@@ -2425,7 +2426,7 @@ textarea.write-us-input {
 
 a.in-the-cart {
   top: 206px;
-  left: 144px;
+  left: 155px;
   z-index: 100;
 
   font-weight: 800;
@@ -2441,7 +2442,7 @@ a.in-the-cart {
   content: "";
   position: absolute;
   top: 7px;
-  left: -27px;
+  left: -34px;
   z-index: -1;
 
   width: 200px;
@@ -2468,8 +2469,8 @@ a.in-the-cart {
 }
 
 a.to-the-comparison {
-  top: 262px;
-  left: 136px;
+  top: 244px;
+  left: 151px;
 
   font-weight: 300;
   font-size: 13px;
@@ -2519,7 +2520,9 @@ a.to-the-comparison {
 }
 
 .main-footer .login-link {
-  padding-top: 4px;
+  padding-top: 5px;
+  line-height: 36px;
+  opacity: 0.7;
 }
 
 .main-footer .login-link::before {
@@ -2538,10 +2541,14 @@ a.to-the-comparison {
 
 .main-footer .comparison {
   padding-top: 5px;
+  line-height: 36px;
+  opacity: 0.7;
 }
 
 .main-footer .basket {
   padding-top: 5px;
+  line-height: 36px;
+  opacity: 0.7;
 }
 
 .address p {
@@ -2553,6 +2560,12 @@ a.to-the-comparison {
   color: #ffffff;
   text-decoration: none;
 }
+
+.phone-number a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
 
 .info-about-container {
   display: flex;
@@ -2617,3 +2630,13 @@ a.to-the-comparison {
   display: block;
   opacity: 1;
 }
+
+.about h3,
+.contacts h3 {
+  letter-spacing: 0.47px;
+  line-height: 48px;
+}
+
+.info-about .contacts .button:hover::before {
+    left: -41px;
+    top: -8px;

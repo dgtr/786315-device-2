@@ -3,11 +3,28 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="format-detection" content="telephone=no">
   <title>"Интернет магазин гаджетов &laquo;Девайс&raquo;"</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300&amp;subset=cyrillic" rel="stylesheet">
   <link href="./css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
+  <!-- Pixel Glass -->
+  <style>
+    HTML {
+  background-repeat: no-repeat;
+  background-position:  50% 0;
+  /* По умолчанию мобильный макет */
+  background-image: url( "img/device-index.jpg" );
+  }
+  }
+
+  BODY {
+  opacity: .5;
+  }
+  </style>
+  <link rel="stylesheet" href="pixel-glass/styles.css">
+  <script src="pixel-glass/script.js"></script>
+  <!-- // Pixel Glass -->
+
 </head>
 
 <body>
@@ -173,27 +190,27 @@
           </a>
         </li>
         <li class="popular-item-2">
-          <a href="">
+          <a href="./catalog.html">
             <h3 aria-label="Наименование популярного товара">Моноподы для селфи</h3>
           </a>
         </li>
         <li class="popular-item-3">
-          <a href="">
+          <a href="./catalog.html">
             <h3 aria-label="Наименование популярного товара">Экшн-камеры</h3>
           </a>
         </li>
         <li class="popular-item-4">
-          <a href="">
+          <a href="./catalog.html">
             <h3 aria-label="Наименование популярного товара">Фитнес-браслеты</h3>
           </a>
         </li>
         <li class="popular-item-5">
-          <a href="">
+          <a href="./catalog.html">
             <h3 aria-label="Наименование популярного товара">Умные часы</h3>
           </a>
         </li>
         <li class="popular-item-6">
-          <a href="">
+          <a href="./catalog.html">
             <h3 aria-label="Наименование популярного товара">Квадрокоптеры</h3>
           </a>
         </li>
@@ -323,7 +340,7 @@
         </ul>
         <div class="phone">
           <h3 class="visually-hidden">Наш телефон</h3>
-          <p>Тел.: +7 (495) 495-95-95</p>
+          <p class="phone-number"><a>Тел.: +7 (495) 495-95-95</a></p>
         </div>
       </div>
       <div class="footer-rowwrapper-3">
