@@ -2325,7 +2325,7 @@ textarea.write-us-input {
 .filter button::before {
   content: "";
   position: absolute;
-  top: 8px;
+  top: 6px;
   left: 0;
   z-index: -1;
 
